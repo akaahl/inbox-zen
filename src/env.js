@@ -14,6 +14,9 @@ export const env = createEnv({
       .default("development"),
     CLERK_SECRET_KEY: z.string(),
     CLERK_WEBHOOK: z.string(),
+    AURINKO_CLIENT_ID: z.string(),
+    AURINKO_CLIENT_SECRET: z.string(),
+    AURINKO_SIGNING_SECRET: z.string(),
   },
 
   /**
@@ -42,6 +45,9 @@ export const env = createEnv({
     CLERK_WEBHOOK: process.env.CLERK_WEBHOOK,
     NEXT_PUBLIC_CLERK_SIGN_IN_URL: process.env.NEXT_PUBLIC_CLERK_SIGN_IN_URL,
     NEXT_PUBLIC_CLERK_SIGN_UP_URL: process.env.NEXT_PUBLIC_CLERK_SIGN_UP_URL,
+    AURINKO_CLIENT_ID: process.env.AURINKO_CLIENT_ID,
+    AURINKO_CLIENT_SECRET: process.env.AURINKO_CLIENT_SECRET,
+    AURINKO_SIGNING_SECRET: process.env.AURINKO_SIGNING_SECRET,
 
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
