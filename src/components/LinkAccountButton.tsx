@@ -7,7 +7,7 @@ import { getAurinkoAuthUrl } from "@/lib/aurinko";
 const LinkAccountButton = () => {
   const onClick = async () => {
     const authUrl = await getAurinkoAuthUrl("Google");
-    console.log(authUrl);
+    window.location.href = authUrl;
   };
 
   return <Button onClick={onClick}>Link Account</Button>;
